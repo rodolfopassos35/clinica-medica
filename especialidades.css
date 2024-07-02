@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+.topo{
+    width: 100%;
+    background-color: #52cde0;
+}
+.conteudo-topo{
+    max-width: 1024px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links-topo{
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+}
+.links-topo a{
+    text-decoration: none;
+    /* padding: 15px; */
+    font-size: 20px;
+    color:#fff;
+}
+.links-topo a:hover{
+    color: #333;
+}
+/* seção links  */
+
+.links-especialidades {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    color:#333;
+    margin-top: 20px;
+}
+.links-especialidades a {
+    color:#333;
+    font-size:20px;
+    text-decoration: none;
+    border-bottom: 2px solid #52cde0;    
+}
+.links-especialidades a:hover{
+    transform: scale(1.1);
+    border-bottom: none;
+    color:#52cde0;
+}
+.secao-links h1{
+    text-align:center;
+    margin-top:30px;
+}
+/* seção especialidades */
+.secao-ortopedia,
+.secao-pediatria,
+.secao-geriatria,
+.secao-psicologia,
+.secao-fisioterapia {
+    max-width:1024px;
+    margin: 0 auto;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+h2{
+    text-align:center;
+    font-size:18px;
+    padding-bottom: 40px;
+}
+p {
+    text-align:center;
+    font-size: 16px;
+    max-width: 524px;
+    margin: 0 auto;
+    /* padding-bottom: 10px; */
+}
+table {
+    width:100%;
+    border-collapse:collapse;
+    border:none;
+}
+tbody tr:nth-of-type(odd){
+    background-color: #cdcdcd;
+}
+tbody tr:nth-of-type(even){
+    background-color:#f1f1f1;
+}
+.container-tabela-ortopedia,
+.container-tabela-pediatria,
+.container-tabela-geriatria,
+.container-tabela-psicologia,
+.container-tabela-fisioterapia {
+    display:flex;
+}
+.imagem {
+    width:250px;
+    height:250px;
+}
+th{
+    background-color: #52cde0;
+    color:#fff;
+    text-align: start;
+    padding:10px;
+}
+td {
+    padding:10px;
+}
+/* seçao rodapé */
+footer{
+    height: 200px;
+    background-color: #0c6e71;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+footer img{
+    width: 100px;
+}
+footer p {
+    color:#fff;
+    line-height: 36px;
+}
+/* media queries especialidades */
+
+@media(min-width:320px) and (max-width:425px){
+    .conteudo-topo{
+        display:block;
+        text-align:center;
+    }
+    .links-topo {
+        border-top: 2px solid #3333335d;
+        padding: 10px;
+        width: 100%;
+
+    }
+    .links-especialidades{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    .imagem{
+        display: none;
+    }
+}
+@media(min-width:426px) and (max-width:768px){
+    .imagem{
+        display:none;
+    }
+    .links-topo{
+        margin:0 10px;
+    }
+}

@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro',sans-serif;
+}
+/* seção topo */
+
+.topo{
+    width: 100%;
+    background-color: #52cde0;
+}
+.conteudo-topo{
+    max-width: 1024px;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links-topo{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.links-topo a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#fff;
+}
+.links-topo a:hover{
+    color: #333;
+}
+/* seção banner */
+.secao-banner{
+    width:100%;
+    height:100vh;
+    background-image: url('assents/recepcao.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.secao-banner h1{
+    font-size: 38px;
+    color: #fff;
+    padding-left: 1%;
+}
+/* seção sobre */
+.secao-sobre{
+    width: 100%;
+    height: 100vh;
+}
+.conteudo-sobre{
+    max-width: 624px;
+    height: 200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.conteudo-sobre h2{
+    text-align: center;
+    font-size: 28px;
+}
+.conteudo-sobre p{
+    font-size: 18px;
+    text-align: center;
+}
+/* seção lista */
+.conteudo-lista{
+    max-width: 624px;
+    height: 300px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+    position: relative;
+
+}
+.conteudo-lista h3{
+    font-size: 20px;
+}
+.conteudo-lista::before{
+    content: "";
+    background-image:url('assents/medico.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+    background-size: 250px 300px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+
+}
+.galeria{
+    max-width: 1024px;
+    height:100vh;
+    margin:0 auto;
+}
+.galeria h2{
+    font-size: 20px;
+    text-align: center;
+}
+.galeria p{
+    font-size: 18px;
+    text-align:center;
+    max-width: 624px;
+    margin:2% auto;
+}
+.secao-imagens {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.secao-imagens img{
+    max-width:300px;
+    border-radius:1px;
+}
+.secao-imagens figure{
+    box-shadow: 0 0 8px gray;
+
+}
+.link-galeria {
+    text-align: center;
+    padding-top: 40px ;
+}
+.link-galeria a{
+    text-decoration: none;
+    background-color: #52cde0;
+    padding: 10px 30px;
+    font-size: 20px;
+    color:#fff;
+    border-radius: 2px;
+}
+#contato{
+    max-width: 1300px;
+    margin:0 auto;
+    text-align: center;
+}
+.conteudo-contato h2{
+    font-size: 28px;
+
+}
+.conteudo-contato p {
+    font-size: 18px;
+    line-height: 36px;
+}
+iframe{
+    width:100%;
+    margin:10px auto;
+}
+footer{
+    height: 200px;
+    background-color: #0c6e71;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+footer img{
+    width: 100px;
+}
+footer p {
+    color:#fff;
+    line-height: 36px;
+}
+/* media queries */
+
+
+@media(max-width:425px){
+    .conteudo-topo{
+        display:block;
+    }
+    .links-topo{
+        border-top: 2px solid #33333354;
+        padding:10px;
+    }
+    .secao-banner{
+        height: 200px;
+    }
+    .secao-banner h1{
+        font-size:20px;
+    }
+    .conteudo-lista::before{
+        display:none;    
+    }
+    .galeria{
+        height:auto;
+    }
+    .secao-imagens{
+        flex-wrap: wrap;
+        gap:10px;
+        width: calc(100% / 1) ;
+    }
+    .link-galeria{
+        padding:20px;
+    }
+    footer{
+        display:block;
+    }
+}
+@media(max-width:768px){
+    .secao-banner{
+        height:300px;
+    }
+    .secao-banner h1 {
+        font-size: 25px;
+    }
+    .conteudo-lista h3, ul {
+        margin: 0 auto;
+    }
+    .conteudo-lista::before {
+        display:none;
+    }
+    .galeria {
+        height:auto;
+    }
+    .secao-imagens {
+        flex-wrap:wrap;
+        gap:20px;
+    }
+    .link-galeria {
+        padding:20px;
+    }
+}
+
